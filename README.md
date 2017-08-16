@@ -1,9 +1,6 @@
 #mvc
 
-normal text, *bold* text
+JavaSpring_Self_Learning
+use maven, SpringMVC, mySQL
 
-test
-
-test 2
-
-[ ] pending task
+by: key
