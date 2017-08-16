@@ -11,8 +11,8 @@
 	<view-state id="home0"  view="/WEB-INF/views/home.jsp" />
 
 	<!-- serve from web app root -->
-	<view-state id="home2"  view="/views/home.jsp" />
+	<view-state id="home2"  view="/WEB-INF/views/home.jsp" />
 
-
+	<view-state id="hello"  view="/WEB-INF/views/hello.jsp" />
 
 </flow>
