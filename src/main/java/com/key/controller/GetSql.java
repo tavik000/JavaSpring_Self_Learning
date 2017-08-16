@@ -20,11 +20,11 @@ public class GetSql {
 
     private HttpServletRequest request;
 
-    String job = null;
-    String id = null;
-    String name = null;
-    String hiredate = null;
-    Float salary = null;
+    private String job = null;
+    private String id = null;
+    private String name = null;
+    private String hiredate = null;
+    private Float salary = null;
 
 
 
@@ -84,22 +84,12 @@ public class GetSql {
 
                 empList.add(employee);
 
-
-
-
-
-
                 //输出结果
                 System.out.println(id + "\t" + name + "\t\t\t" + job + "\t\t\t" + hiredate + "\t" + salary);
 
 
             }
 
-//            model.addAttribute("employee.id",id);
-//            model.addAttribute("employee.name",name);
-//            model.addAttribute("employee.job",job);
-//            model.addAttribute("employee.hiredate",hiredate);
-//            model.addAttribute("employee.salary",salary);
             model.addAttribute("empList",empList);
 
             rs.close();
@@ -119,21 +109,7 @@ public class GetSql {
         }
     }
 
-    public String getId() {
-        return id;
-    }
-    public String getName() {
-        return name;
-    }
-    public String getJob() {
-        return job;
-    }
-    public String getHiredate() {
-        return hiredate;
-    }
-    public Float getSalary() {
-        return salary;
-    }
+
 
     public static void main(String[] args) {
 

@@ -1,15 +1,12 @@
 package com.key.controller;
 
-import java.awt.datatransfer.StringSelection;
 import java.lang.reflect.Method;
 import java.text.DateFormat;
-import java.util.Arrays;
 import java.util.Date;
 import java.util.Locale;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,12 +28,6 @@ public class HomeController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String hocme(Locale locale, Model model) {
 
-
-//		request.setAttribute("abc",abc);
-//		model.addAttribute("abc",abc);
-
-
-
 		logger.info("Welcome home! The client locale is {}.", locale);
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
@@ -44,8 +35,6 @@ public class HomeController {
 		String formattedDate = dateFormat.format(date);
 		
 		model.addAttribute("serverTime", formattedDate );
-		
-
 
 		String idStr = "YAya";
 		try {
@@ -56,12 +45,9 @@ public class HomeController {
 		}
 
 
-
 		// get SQL data
 		GetSql Sql = new GetSql();
 		Sql.display(model);
-
-
 
 
 		return "home";
