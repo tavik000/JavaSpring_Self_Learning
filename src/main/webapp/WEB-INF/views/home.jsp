@@ -9,7 +9,7 @@
     Hello SpringMVC!
 </h1>
 <div id="empEdit" align="center">
-    <a href="empform">Add Employee</a>
+    <a href="AddEmployee">Add Employee</a>
     <a href="viewemp">View Employees</a>
 
 </div>

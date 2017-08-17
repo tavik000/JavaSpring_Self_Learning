@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * Handles requests for the application home page.
@@ -37,6 +38,7 @@ public class HomeController {
 		model.addAttribute("serverTime", formattedDate );
 
 		String idStr = "YAya";
+
 		try {
 			Method method = GetSql.class.getMethod("main", String[].class);
 			method.invoke(GetSql.class.newInstance(), new Object[]{ new String[]{idStr}});
@@ -54,6 +56,15 @@ public class HomeController {
 //		return "AddEmployee";
 
 	}
+
+
+        @RequestMapping("/AddEmployee")
+        public String handleRequest(HttpServletRequest req, HttpServletResponse resp) throws Exception {
+
+//            resp.getWriter().println("hello HttpServletResponse");
+            return "AddEmployee";
+        }
+
 	
 //	@RequestMapping("/home")
 //	public String hello(){
