@@ -5,10 +5,10 @@
     <title>Home</title>
 </head>
 <body>
-<h1>
-    Hello world!
+<h1 align="center">
+    Hello SpringMVC!
 </h1>
-<div id="empEdit">
+<div id="empEdit" align="center">
     <a href="empform">Add Employee</a>
     <a href="viewemp">View Employees</a>
 
@@ -20,9 +20,9 @@
     <%-- <form:errors path="*" cssClass="errorblock" element="div"/>
      --%>
 
+<hr>
 
-
-        <table border="1px" cellpadding="0" cellspacing="0" >
+        <table align="center" width="500" border="1px" cellpadding="0" cellspacing="0" >
             <thead>
             <tr>
 

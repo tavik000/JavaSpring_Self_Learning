@@ -15,4 +15,6 @@
 
 	<view-state id="hello"  view="/WEB-INF/views/hello.jsp" />
 
+	<view-state id="AddEmployee"  view="/WEB-INF/views/AddEmployee.jsp" />
+
 </flow>
