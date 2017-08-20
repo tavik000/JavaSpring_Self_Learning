@@ -5,7 +5,7 @@
     <title>Home</title>
 </head>
 <body>
-<form action="AddEmployee.jsp" method="post" onsubmit="return check(this);">
+<form action="AddEmployeeMethod" method="post" onsubmit="return check(this);">
     <table align="center" width="450">
         <tr>
             <td align="center" colspan="2">

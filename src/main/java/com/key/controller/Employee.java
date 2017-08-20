@@ -3,7 +3,7 @@ package com.key.controller;
 public class Employee
 
 {
-    private String id;
+    private Integer id;
     private String name;
     private String job;
     private String hiredate;
@@ -25,11 +25,11 @@ public class Employee
         this.hiredate = hiredate;
     }
 
-    public String getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
