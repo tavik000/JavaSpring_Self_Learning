@@ -9,8 +9,7 @@
     Hello SpringMVC!
 </h1>
 <div id="empEdit" align="center">
-    <a href="AddEmployee">Add Employee</a>
-    <a href="viewemp">View Employees</a>
+    <a href="${pageContext.request.contextPath}/AddEmployee">Add Employee</a>
 
 </div>
 
@@ -37,14 +36,14 @@
             <tbody>
             <c:forEach items="${empList}" var="employee">
                 <tr>
-                    <td>${employee.id}</td>
-                    <td>${employee.name}</td>
-                    <td>${employee.job}</td>
-                    <td>${employee.hiredate}</td>
-                    <td>${employee.salary}</td>
+                    <td align="center">${employee.id}</td>
+                    <td align="center">${employee.name}</td>
+                    <td align="center">${employee.job}</td>
+                    <td align="center">${employee.hiredate}</td>
+                    <td align="center">${employee.salary}</td>
                     <td>
-                        <a href="${pageContext.request.contextPath}/user/edit/${employee.id} ">Edit</a><br/>
-                        <a href="${pageContext.request.contextPath}/user/delete/${employee.id} ">Delete</a><br/>
+                        <a href="${pageContext.request.contextPath}/edit/?id=${employee.id}&name=${employee.name}&job=${employee.job}&hiredate=${employee.hiredate}&salary=${employee.salary}">Edit</a><br/>
+                        <a href="${pageContext.request.contextPath}/delete/${employee.id} ">Delete</a><br/>
                     </td>
                 </tr>
             </c:forEach>

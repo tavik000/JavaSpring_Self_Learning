@@ -5,11 +5,11 @@
     <title>Home</title>
 </head>
 <body>
-<form action="AddEmployeeMethod" method="post" onsubmit="return check(this);">
+<form action="${pageContext.request.contextPath}/EditEmployeeMethod/?oriId=${oriId}" method="post" onsubmit="return check(this);">
     <table align="center" width="450">
         <tr>
             <td align="center" colspan="2">
-                <h2>Add Employee</h2>
+                <h2>Edit Employee</h2>
                 <hr>
             </td>
         </tr>
@@ -18,7 +18,7 @@
                 Employee ID
             </td>
             <td>
-                <input type="text" name ="id"/>
+                <input type="text" name ="id" value =${emp.id} />
             </td>
         </tr>
         <tr>
@@ -26,7 +26,7 @@
                 Employee Name
             </td>
             <td>
-                <input type="text" name ="name"/>
+                <input type="text" name ="name" value =${emp.name} />
             </td>
         </tr>
         <tr>
@@ -34,7 +34,7 @@
                 Job
             </td>
             <td>
-                <input type="text" name ="job"/>
+                <input type="text" name ="job" value =${emp.job} />
             </td>
         </tr>
         <tr>
@@ -42,7 +42,7 @@
                 Hire date
             </td>
             <td>
-                <input type="text" name ="hiredate"/>
+                <input type="text" name ="hiredate" value =${emp.hiredate} />
             </td>
         </tr>
         <tr>
@@ -50,12 +50,12 @@
                 Salary
             </td>
             <td>
-                <input type="text" name ="salary"/>
+                <input type="text" name ="salary" value =${emp.salary} />
             </td>
         </tr>
         <tr>
             <td align="center" colspan="2">
-                <input type="submit" value="Add">
+                <input type="submit" value="Save">
             </td>
             <td>
                 <a href="${pageContext.request.contextPath}/">Cancel</a>
