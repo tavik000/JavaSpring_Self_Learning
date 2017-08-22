@@ -1,6 +1,6 @@
 
 import com.key.mybatis.MybatisUtil;
-import com.key.pojo.User;
+import com.key.model.User;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package com.key.pojo;
+package com.key.model;
 
 public class User {
     private int uid;
