@@ -1,19 +1,17 @@
-package com.key.controller;
+package com.key.dao;
 
+
+import com.key.entity.Employee;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
-public class Delete {
+public class Edit {
 
-    public static void DeleteMethod( Integer id){
+    public static void EditMethod(Employee emp, Integer oriId){
         GetSql Sql = GetSql.getInstance();
         try {
-
             if(!Sql.con.isClosed())
                 System.out.println("Succeeded connecting to the Database!");
             //2.创建statement类对象，用来执行SQL语句！！
@@ -26,13 +24,16 @@ public class Delete {
 
             //修改
             PreparedStatement psql;
-            //预处理删除数据
-
-
-            psql = Sql.con.prepareStatement("delete from emp where empno = ?");
-            psql.setFloat(1, id);
+            //预处理修改数据，其中有6个参数--“？”
+            psql = Sql.con.prepareStatement("update emp set empno = ?, ename = ?, job = ?, hiredate = ?, sal = ? where empno = ?");
+            psql.setInt(1, emp.getId());
+            psql.setString(2, emp.getName());
+            psql.setString(3, emp.getJob());
+            psql.setString(4, emp.getHiredate());
+            psql.setFloat(5,emp.getSalary());
+            psql.setFloat(6,oriId);
             psql.executeUpdate();
-            psql.close();
+
 
         } catch(SQLException e) {
             //数据库连接失败异常处理

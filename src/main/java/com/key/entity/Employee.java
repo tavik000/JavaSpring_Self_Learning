@@ -1,4 +1,4 @@
-package com.key.model;
+package com.key.entity;
 
 public class Employee
 
