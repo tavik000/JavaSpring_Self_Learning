@@ -1,26 +1,53 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-    <settings>
-        <setting name="lazyLoadingEnabled" value="true" />
-        <setting name="aggressiveLazyLoading" value="false" />
-    </settings>
+    <properties resource="config.properties"/>
     <typeAliases>
-        <typeAlias type="pojo.User" alias="User"></typeAlias>
+        <typeAlias type="com.key.pojo.User" alias="User"/>
     </typeAliases>
     <environments default="development">
         <environment id="development">
-            <transactionManager type="JDBC" />
+            <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
-                <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://localhost:3306/mybatis" />
-                <property name="username" value="root" />
-                <property name="password" value="Equilibrium2017#" />
-
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
             </dataSource>
         </environment>
     </environments>
-
     <mappers>
-        <mapper resource="mapper/User.xml" />
+        <mapper resource="mapper/User.xml"/>
     </mappers>
 </configuration>
+
+
+
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<configuration>-->
+    <!--<settings>-->
+        <!--<setting name="lazyLoadingEnabled" value="true" />-->
+        <!--<setting name="aggressiveLazyLoading" value="false" />-->
+    <!--</settings>-->
+    <!--<typeAliases>-->
+        <!--<typeAlias type="pojo.User" alias="User"></typeAlias>-->
+    <!--</typeAliases>-->
+    <!--<environments default="development">-->
+        <!--<environment id="development">-->
+            <!--<transactionManager type="JDBC" />-->
+            <!--<dataSource type="POOLED">-->
+                <!--<property name="driver" value="com.mysql.jdbc.Driver"/>-->
+                <!--<property name="url" value="jdbc:mysql://localhost:3306/mybatis" />-->
+                <!--<property name="username" value="root" />-->
+                <!--<property name="password" value="Equilibrium2017#" />-->
+
+            <!--</dataSource>-->
+        <!--</environment>-->
+    <!--</environments>-->
+
+    <!--<mappers>-->
+        <!--<mapper resource="mapper/User.xml" />-->
+    <!--</mappers>-->
+<!--</configuration>-->

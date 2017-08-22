@@ -1,12 +1,4 @@
-<!--<?xml version="1.0" encoding="UTF-8"?>-->
-<!--<!DOCTYPE mapper-->
-<!--PUBLIC "-//com.map.mybatis.org//DTD Mapper 3.0//EN"-->
-<!--"http://mybatis.org/dtd/mybatis-3-mapper.dtd">-->
-<!--<mapper namespace="com">-->
-<!--<select id="findById" parameterType="int" resultType="User">-->
-<!--SELECT * FROM User WHERE id=#{id}-->
-<!--</select>-->
-<!--</mapper>-->
+
 
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
@@ -23,3 +15,13 @@
     UPDATE User SET UID=#{id},NICKNAME=#{nickName},USERNAME=#{userName},PASSWORD=#{password},EMAIL=#{email} WHERE ID=#{id}
 </update>
 </mapper>
+
+        <!--<?xml version="1.0" encoding="UTF-8"?>-->
+        <!--<!DOCTYPE mapper-->
+        <!--PUBLIC "-//com.map.mybatis.org//DTD Mapper 3.0//EN"-->
+        <!--"http://mybatis.org/dtd/mybatis-3-mapper.dtd">-->
+        <!--<mapper namespace="com">-->
+        <!--<select id="findById" parameterType="int" resultType="User">-->
+        <!--SELECT * FROM User WHERE id=#{id}-->
+        <!--</select>-->
+        <!--</mapper>-->
