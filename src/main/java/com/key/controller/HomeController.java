@@ -139,10 +139,4 @@ public class HomeController {
     }
 
 
-//	@RequestMapping("/home")
-//	public String hello(){
-//		System.out.println("inside hello()");
-//		return "home";
-//	}
-
 }
