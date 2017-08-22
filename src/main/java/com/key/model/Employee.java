@@ -1,4 +1,4 @@
-package com.key.controller;
+package com.key.model;
 
 public class Employee
 

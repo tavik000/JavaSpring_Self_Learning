@@ -1,8 +1,8 @@
 <component name="ArtifactManager">
-  <artifact type="war" name="mvc:war">
+  <artifact type="war" name="keySpringMVCMastery:war">
     <output-path>$PROJECT_DIR$/target</output-path>
     <root id="archive" name="mvc-1.0.0-BUILD-SNAPSHOT.war">
-      <element id="artifact" artifact-name="mvc:war exploded" />
+      <element id="artifact" artifact-name="keySpringMVCMastery:war exploded" />
     </root>
   </artifact>
 </component>

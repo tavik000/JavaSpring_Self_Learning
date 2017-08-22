@@ -1,13 +1,15 @@
 package com.key.controller;
 
 
+import com.key.model.Employee;
+
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
 
 public class Edit {
 
-    public static void EditMethod( Employee emp, Integer oriId){
+    public static void EditMethod(Employee emp, Integer oriId){
         GetSql Sql = GetSql.getInstance();
         try {
             if(!Sql.con.isClosed())
