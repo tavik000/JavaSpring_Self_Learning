@@ -4,7 +4,7 @@ JavaSpring_Self_Learning
  
 maven, SpringMVC, mybatis, mySQL,  IDEA 2017.2.2, jdk1.7
 
-need to create database sqltestdb and run the sql file to import data to it.
+need to create database sqltestdb and run the sql file to import data into it.
 
 Author: key
 
