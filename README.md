@@ -24,7 +24,7 @@ Author: key
 -----
 
 ## Sponsor
-You can support me by Alipay or Wechat Pay with QR code below
+Feel free to support me for no reasons by Alipay or Wechat Pay with QR code below
 
 
 
