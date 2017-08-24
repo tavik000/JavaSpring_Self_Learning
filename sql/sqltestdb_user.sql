@@ -1,0 +1,1 @@
+INSERT INTO sqltestdb.user (uid, uname, username, password, email) VALUES (0, 'admin', 'admin', 'admin', 'tavik002@gmail.com');

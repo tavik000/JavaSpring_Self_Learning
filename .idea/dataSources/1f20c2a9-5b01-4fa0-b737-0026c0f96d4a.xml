@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="mysql@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="mysql">
+      <Current>1</Current>
+    </schema>
+    <schema id="3" parent="1" name="gilt"/>
+    <schema id="4" parent="1" name="information_schema"/>
+    <schema id="5" parent="1" name="mybatis001"/>
+    <schema id="6" parent="1" name="performance_schema"/>
+    <schema id="7" parent="1" name="sqltestdb">
+      <Visible>1</Visible>
+    </schema>
+    <schema id="8" parent="1" name="sys"/>
+    <table id="9" parent="7" name="emp"/>
+    <table id="10" parent="7" name="user"/>
+    <column id="11" parent="9" name="empno">
+      <Position>1</Position>
+      <DataType>int(4) unsigned zerofill|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="12" parent="9" name="ename">
+      <Position>2</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="13" parent="9" name="job">
+      <Position>3</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="14" parent="9" name="hiredate">
+      <Position>4</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="15" parent="9" name="sal">
+      <Position>5</Position>
+      <DataType>float(7,2)|0</DataType>
+    </column>
+    <key id="16" parent="9" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>empno</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="17" parent="10" name="uid">
+      <Position>1</Position>
+      <DataType>int(4)|0</DataType>
+    </column>
+    <column id="18" parent="10" name="uname">
+      <Position>2</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="19" parent="10" name="username">
+      <Position>3</Position>
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="20" parent="10" name="password">
+      <Position>4</Position>
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="21" parent="10" name="email">
+      <Position>5</Position>
+      <DataType>varchar(25)|0</DataType>
+    </column>
+  </database-model>
+</dataSource>
