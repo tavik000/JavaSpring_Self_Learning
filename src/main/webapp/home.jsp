@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>
-	Hello world!  
+	Hello world!  FROM outside home.jsp
 </h1>
 
 </body>
