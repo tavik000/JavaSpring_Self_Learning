@@ -9,7 +9,7 @@ import com.key.dao.Add;
 import com.key.dao.Delete;
 import com.key.dao.Edit;
 import com.key.dao.GetSql;
-import com.key.entity.Employee;
+import com.key.pojo.Employee;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;

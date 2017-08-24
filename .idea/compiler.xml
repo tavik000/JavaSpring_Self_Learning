@@ -12,8 +12,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="keySpringMVCMastery" target="1.7" />
-      <module name="mvc" target="1.7" />
+      <module name="keySpringMVCMastery" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

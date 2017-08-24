@@ -1,7 +1,7 @@
 package com.key.dao;
 
 
-import com.key.entity.Employee;
+import com.key.pojo.Employee;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;

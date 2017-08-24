@@ -1,4 +1,4 @@
-package com.key.entity;
+package com.key.pojo;
 
 public class User {
     private int uid;
