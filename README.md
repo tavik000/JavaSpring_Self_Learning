@@ -2,7 +2,7 @@
 
 JavaSpring_Self_Learning
  
-Maven, SpringMVC, mybatis, mySQL,  IDEA 2017.2.2, Tomcat8.5.20, jdk1.7
+Maven, SpringMVC, Mybatis, MySQL, IDEA 2017.2.2, Tomcat 8.5.20, Jdk 1.7
 
 
 
