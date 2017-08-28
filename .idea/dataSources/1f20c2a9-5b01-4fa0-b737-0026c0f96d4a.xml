@@ -44,6 +44,7 @@
     <column id="17" parent="10" name="uid">
       <Position>1</Position>
       <DataType>int(4)|0</DataType>
+      <NotNull>1</NotNull>
     </column>
     <column id="18" parent="10" name="uname">
       <Position>2</Position>
@@ -61,5 +62,10 @@
       <Position>5</Position>
       <DataType>varchar(25)|0</DataType>
     </column>
+    <key id="22" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>uid</ColNames>
+      <Primary>1</Primary>
+    </key>
   </database-model>
 </dataSource>

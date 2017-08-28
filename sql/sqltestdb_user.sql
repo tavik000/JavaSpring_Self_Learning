@@ -1,1 +1,1 @@
-INSERT INTO sqltestdb.user (uid, uname, username, password, email) VALUES (0, 'admin', 'admin', 'admin', 'tavik002@gmail.com');
+UPDATE sqltestdb.user SET uname = 'admin', username = 'admin', password = 'admin', email = 'tavik002@gmail.com' WHERE uid = 0;
