@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.key.dao.EmployeeDao">
+    <!-- 目的：为dao接口方法提供sql语句配置 -->
+    <select id="queryById" resultType="Employee" parameterType="long">
+        <!-- 具体的sql -->
+        SELECT
+        emp_id,
+        emp_name,
+        job,
+        hiredate,
+        salary
+        FROM
+        emp
+        WHERE
+        emp_id = #{empId}
+    </select>
+
+    <select id="queryAll" resultType="Employee">
+        SELECT
+        emp_id,
+        emp_name,
+        job,
+        hiredate,
+        salary
+        FROM
+        emp
+        ORDER BY
+        emp_id
+        LIMIT #{offset}, #{limit}
+    </select>
+
+    <update id="updateEmployee" parameterType="Employee">
+        UPDATE emp
+        SET EMP_NAME = #{empName},
+        JOB = #{job},
+        HIREDATE = #{hiredate},
+        SALARY = #{salary}
+        WHERE
+        emp_id = #{empId}
+    </update>
+
+    <insert id="addEmployee">
+        INSERT INTO emp(`emp_id`, `emp_name`, `job`,`hiredate`,`salary`)
+        VALUES(#{empId}, #{empName}, #{job}, #{hiredate},#{salary})
+    </insert>
+
+    <delete id="deleteEmployeeById">
+        DELETE FROM emp WHERE emp_id = #{empId}
+    </delete>
+</mapper>
