@@ -9,7 +9,7 @@
 <% String appPath = request.getContextPath(); %>
 <html>
 <head>
-    <title>添加图书</title>
+    <title>Add Employee</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- 引入 Bootstrap -->
@@ -28,9 +28,9 @@
         <div class="col-md-12 column">
             <ul class="nav nav-tabs">
                 <li><a href="<%=appPath%>/employee/list">Home</a></li>
-                <li><a href="<%=appPath%>/employee/detail/1003">图书具体信息</a></li>
-                <li class="active"><a href="<%=appPath%>/add.jsp">添加图书信息</a></li>
-                <li class="disabled"><a href="#">信息</a></li>
+                <li><a href="<%=appPath%>/employee/detail/1003">Employee Detail</a></li>
+                <li class="active"><a href="<%=appPath%>/add.jsp">Add Employee Detail</a></li>
+                <li class="disabled"><a href="#">Information</a></li>
             </ul>
         </div>
     </div>
@@ -39,8 +39,8 @@
         <div class="col-md-12 column">
             <div class="page-header">
                 <h1>
-                    添加图书
-                    <small>增加图书信息</small>
+                    Add Employee
+                    <small>Add Employee Detail</small>
                 </h1>
             </div>
         </div>
@@ -48,18 +48,21 @@
 
     <div class="row clearfix">
         <div class="col-md-12 column">
-            <form role="form" id="add" method="post" action="<%=appPath%>/book/add" accept-charset="utf-8">
+            <form role="form" id="add" method="post" action="<%=appPath%>/employee/add" accept-charset="utf-8">
                 <div class="form-group">
-                    <label>图书ID</label><input class="form-control" name="bookId"/>
+                    <label>Employee ID</label><input class="form-control" name="empId"/>
                 </div>
                 <div class="form-group">
-                    <label>图书名字</label><input class="form-control" name="name"/>
+                    <label>Employee Name</label><input class="form-control" name="empName"/>
                 </div>
                 <div class="form-group">
-                    <label>图书描述</label><input class="form-control" name="detail"/>
+                    <label>Job</label><input class="form-control" name="job"/>
                 </div>
                 <div class="form-group">
-                    <label>图书数量</label><input class="form-control" name="number"/>
+                    <label>Hire Date</label><input class="form-control" name="hiredate"/>
+                </div>
+                <div class="form-group">
+                    <label>Salary</label><input class="form-control" name="salary"/>
                 </div>
                 <button class="btn btn-default" id="sub">Submit</button>
             </form>
@@ -71,7 +74,7 @@
             <div class="alert alert-dismissable alert-danger">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×
                 </button>
-                <strong>提醒：</strong><span id="warning-text"></span>
+                <strong>Warning：</strong><span id="warning-text"></span>
             </div>
         </div>
     </div>
