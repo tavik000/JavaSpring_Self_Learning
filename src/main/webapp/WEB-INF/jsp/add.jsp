@@ -28,8 +28,7 @@
         <div class="col-md-12 column">
             <ul class="nav nav-tabs">
                 <li><a href="<%=appPath%>/employee/list">Home</a></li>
-                <li><a href="<%=appPath%>/employee/detail/1003">Employee Detail</a></li>
-                <li class="active"><a href="<%=appPath%>/add.jsp">Add Employee Detail</a></li>
+                <li class="active"><a href="<%=appPath%>/WEB-INF/jsp/add.jsp">Add Employee Detail</a></li>
                 <li class="disabled"><a href="#">Information</a></li>
             </ul>
         </div>
@@ -84,7 +83,7 @@
 <script src="https://code.jquery.com/jquery.js"></script>
 <script type="text/javascript">
     function list() {
-        window.location.href="<%=appPath%>/book/list";
+        window.location.href="<%=appPath%>/employee/list";
     }
     $('#warning').css('display', 'none');
     var frm = $('#add');
@@ -97,7 +96,7 @@
                 list();
             },
             error:function(data){
-                //alert("添加失败");
+                alert("Failure");
             }
         });
         ev.preventDefault();

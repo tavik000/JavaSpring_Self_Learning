@@ -39,6 +39,11 @@ public class EmployeeController {
         return "detail";
     }
 
+    @RequestMapping(value = "/gotoAdd", method = RequestMethod.GET)
+    private String gotoAdd(Model model) {
+        return "add";// WEB-INF/jsp/"add".jsp
+    }
+
     @RequestMapping(value = "/add", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
     @ResponseBody
     private String add(Employee employee) {
@@ -51,9 +56,8 @@ public class EmployeeController {
     }
 
     @RequestMapping(value = "/del/{empId}", method = RequestMethod.GET)
-    @ResponseBody
     private String deleteEmployeeById(@PathVariable("empId") Long id) {
         int i = employeeService.deleteEmployeeById(id);
-        return i > 0 ? "success" : "error";
+        return "redirect:/employee/list";  //重定向list
     }
 }

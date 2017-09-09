@@ -37,7 +37,7 @@
             <ul class="nav nav-tabs">
                 <li class="active"><a href="<%=appPath%>/employee/list">Home</a></li>
                 <li><a href="<%=appPath%>/employee/detail/1000">Employee Detail</a></li>
-                <li><a href="<%=appPath%>/add.jsp">Add Employee</a></li>
+                <li><a href="<%=appPath%>/WEB-INF/jsp/add.jsp">Add Employee</a></li>
                 <li class="disabled"><a href="#">Information</a></li>
             </ul>
         </div>

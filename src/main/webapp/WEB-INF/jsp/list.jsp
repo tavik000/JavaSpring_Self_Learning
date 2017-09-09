@@ -21,7 +21,8 @@
         <div class="col-md-12 column">
             <div class="page-header">
                 <h1>
-                    Key <small>Employee System - SSM framework</small>
+                    Key
+                    <small>Employee System - SSM framework</small>
                 </h1>
             </div>
         </div>
@@ -30,8 +31,8 @@
         <div class="col-md-12 column">
             <ul class="nav nav-tabs">
                 <li class="active"><a href="<%=appPath%>/employee/list">Home</a></li>
-                <li><a href="<%=appPath%>/employee/detail/1000">Employee Detail</a></li>
-                <li><a href="<%=appPath%>/add.jsp">Add Employee</a></li>
+                <%--<li><a href="<%=appPath%>/employee/detail/1000">Employee Detail</a></li>--%>
+                <li><a href="<%=appPath%>/employee/gotoAdd">Add Employee</a></li>
                 <li class="disabled"><a href="#">Information</a></li>
             </ul>
         </div>
@@ -39,7 +40,9 @@
     <div class="row clearfix">
         <div class="col-md-12 column">
             <div class="page-header">
-                <h1>Employee List <small>show current information of employee</small></h1>
+                <h1>Employee List
+                    <small>show current information of employee</small>
+                </h1>
             </div>
         </div>
     </div>
