@@ -32,16 +32,16 @@ public class EmployeeController {
         return "list";// WEB-INF/jsp/"list".jsp
     }
 
-    @RequestMapping(value = "/detail/{empId}", method = RequestMethod.GET)
-    private String detail(@PathVariable("empId") Long empId, Model model) {
-        Employee employee = employeeService.getById(empId);
-        model.addAttribute("employee", employee);
-        return "detail";
-    }
-
     @RequestMapping(value = "/gotoAdd", method = RequestMethod.GET)
     private String gotoAdd(Model model) {
         return "add";// WEB-INF/jsp/"add".jsp
+    }
+
+    @RequestMapping(value = "/gotoEdit/{empId}", method = RequestMethod.GET)
+    private String gotoEdit(@PathVariable("empId") Long empId, Model model) {
+        Employee employee = employeeService.getById(empId);
+        model.addAttribute("employee", employee);
+        return "edit";// WEB-INF/jsp/"edit".jsp
     }
 
     @RequestMapping(value = "/add", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
@@ -51,6 +51,17 @@ public class EmployeeController {
         int i = -2;
         if (hasEmployee == null) {
             i = employeeService.addEmployee(employee);
+        }
+        return i > 0 ? "success" : "error";
+    }
+
+    @RequestMapping(value = "/edit", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
+    @ResponseBody
+    private String edit(Employee employee) {
+        Employee hasEmployee = employeeService.getById(employee.getEmpId());
+        int i = -2;
+        if (hasEmployee != null) {
+            i = employeeService.updateEmployee(employee);
         }
         return i > 0 ? "success" : "error";
     }

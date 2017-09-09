@@ -2,7 +2,7 @@
 
 JavaSpring_Self_Learning
  
-Maven, SpringMVC, Mybatis, MySQL, IDEA 2017.2.2, Tomcat 8.5.20, Jdk 1.7
+Maven, SpringMVC, Mybatis, MySQL, IDEA 2017.2.2, Tomcat 8.5.20, Jdk 1.8
 
 
 
@@ -17,11 +17,11 @@ Author: key
 ## Screenshots
 
 
-![home](https://github.com/tavik000/JavaSpring_Self_Learning/raw/master/Screenshots/home.png)
-![add](https://github.com/tavik000/JavaSpring_Self_Learning/raw/master/Screenshots/add.png)
-![edit](https://github.com/tavik000/JavaSpring_Self_Learning/raw/master/Screenshots/edit.png)
+![home](https://github.com/tavik000/JavaSpring_Self_Learning/raw/master/Screenshots/newHome.png)
+![add](https://github.com/tavik000/JavaSpring_Self_Learning/raw/master/Screenshots/newAdd.png)
+![edit](https://github.com/tavik000/JavaSpring_Self_Learning/raw/master/Screenshots/newEdit.png)
 View from database
-![database](https://github.com/tavik000/JavaSpring_Self_Learning/raw/master/Screenshots/database.png)
+![database](https://github.com/tavik000/JavaSpring_Self_Learning/raw/master/Screenshots/newDatabase.png)
 
 
 **If you like this, please leave a star.**

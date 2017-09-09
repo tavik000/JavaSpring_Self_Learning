@@ -1,1 +1,1 @@
-INSERT INTO sqltestdb.user (uid, uname, username, password, email) VALUES (0, 'admin', 'admin', 'admin', 'tavik002@gmail.com');
+INSERT INTO sqltestdb.user (uname, username, password, email) VALUES ('admin', 'admin', 'admin', 'tavik002@gmail.com');

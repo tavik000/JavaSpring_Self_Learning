@@ -9,7 +9,7 @@
 <% String appPath = request.getContextPath(); %>
 <html>
 <head>
-    <title>Add Employee</title>
+    <title>Edit Employee</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- 引入 Bootstrap -->
@@ -28,7 +28,7 @@
         <div class="col-md-12 column">
             <ul class="nav nav-tabs">
                 <li><a href="<%=appPath%>/employee/list">Home</a></li>
-                <li class="active"><a href="<%=appPath%>/employee/gotoAdd">Add Employee Detail</a></li>
+                <li class="active"><a href="<%=appPath%>/employee/gotoAdd">Edit Employee Detail</a></li>
                 <li class="disabled"><a href="#">Information</a></li>
             </ul>
         </div>
@@ -38,8 +38,8 @@
         <div class="col-md-12 column">
             <div class="page-header">
                 <h1>
-                    Add Employee
-                    <small>Add Employee Detail</small>
+                    Edit Employee
+                    <small>Edit Employee Detail</small>
                 </h1>
             </div>
         </div>
@@ -47,21 +47,21 @@
 
     <div class="row clearfix">
         <div class="col-md-12 column">
-            <form role="form" id="add" method="post" action="<%=appPath%>/employee/add" accept-charset="utf-8">
+            <form role="form" id="edit" method="post" action="<%=appPath%>/employee/edit" accept-charset="utf-8">
                 <div class="form-group">
-                    <label>Employee ID</label><input class="form-control" name="empId"/>
+                    <label>Employee ID</label><input class="form-control" name="empId" readonly="readonly" value="${requestScope.get('employee').empId}"/>
                 </div>
                 <div class="form-group">
-                    <label>Employee Name</label><input class="form-control" name="empName"/>
+                    <label>Employee Name</label><input class="form-control" name="empName" value="${requestScope.get('employee').empName}"/>
                 </div>
                 <div class="form-group">
-                    <label>Job</label><input class="form-control" name="job"/>
+                    <label>Job</label><input class="form-control" name="job" value="${requestScope.get('employee').job}"/>
                 </div>
                 <div class="form-group">
-                    <label>Hire Date</label><input class="form-control" name="hiredate"/>
+                    <label>Hire Date</label><input class="form-control" name="hiredate" value="${requestScope.get('employee').hiredate}"/>
                 </div>
                 <div class="form-group">
-                    <label>Salary</label><input class="form-control" name="salary"/>
+                    <label>Salary</label><input class="form-control" name="salary" value="${requestScope.get('employee').salary}"/>
                 </div>
                 <button class="btn btn-default" id="sub">Submit</button>
                 <button class="btn btn-default" id="cancel">Cancel</button>
@@ -87,7 +87,7 @@
         window.location.href="<%=appPath%>/employee/list";
     }
     $('#warning').css('display', 'none');
-    var frm = $('#add');
+    var frm = $('#edit');
     frm.submit(function (ev) {
         $.ajax({
             type: frm.attr('method'),

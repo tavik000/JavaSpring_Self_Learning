@@ -67,7 +67,7 @@
                         <td>${employee.hiredate}</td>
                         <td>${employee.salary}</td>
                         <td>
-                            <a href="<%=appPath%>/employee/detail/${employee.empId}">Detail</a> |
+                            <a href="<%=appPath%>/employee/gotoEdit/${employee.empId}">Edit</a> |
                             <a href="<%=appPath%>/employee/del/${employee.empId}">Delete</a>
                         </td>
 
