@@ -2,8 +2,7 @@
 
 JavaSpring_Self_Learning
  
-Maven, SpringMVC, Mybatis, MySQL, IDEA 2017.2.2, Tomcat 8.5.20, Jdk 1.8
-
+Maven, SpringMVC, Mybatis, MySQL, IDEA 2017.2.2, Tomcat 8.5.20, Jdk 1.8, Bootstrap
 
 Need to create database sqltestdb and run the `.sql` file to import data into it.
 
