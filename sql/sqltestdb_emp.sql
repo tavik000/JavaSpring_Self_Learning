@@ -2,7 +2,7 @@ INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Drake', 'An
 INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Mare', 'Specialist', '2016-07-05', 15500);
 INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Dawg', 'Security', '2016-05-11', 8500);
 INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Pussy', 'Vice', '2016-12-01', 145000);
-INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Chubby', 'Chef', '2017-03-04', 13000);
+INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Ant', 'Chef', '2017-03-04', 13000);
 INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Drangonfly', 'Concierge', '2017-06-30', 7500);
 INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Dormice', 'Clerk', '2017-04-06', 9000);
 INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Locust', 'Steward', '2017-07-01', 6000);
@@ -30,6 +30,9 @@ INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Hummingbird
 INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Foal', 'Guard', '2017-09-08', 7000);
 INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Earthworm', 'Programmer', '2017-01-30', 13000);
 INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Cock', 'Driver', '2017-06-30', 9000);
+INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Leopard', 'Cleric', '2017-09-18', 20000);
+INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Jackass', 'Concierge', '2017-09-18', 5000);
+INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Lamb', 'Programmer', '2017-08-21', 13000);
 INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Rhinoceros', 'Salesman', '2017-08-20', 10500);
 INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Peacock', 'Tester', '2017-05-15', 10000);
 INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Phoenix', 'Salesman', '2017-08-22', 11000);
