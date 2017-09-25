@@ -34,6 +34,12 @@ INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Leopard', '
 INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Jackass', 'Concierge', '2017-09-18', 5000);
 INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Lamb', 'Programmer', '2017-08-21', 13000);
 INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Mule', 'Barman', '2017-09-22', 15000);
+INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Giraffe', 'Cameraman', '2017-09-25', 16000);
+INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Grasshopper', 'Bulter', '2017-09-25', 12500);
+INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Mussel', 'Researcher', '2017-09-25', 35000);
+INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Snake', 'Butcher', '2017-09-25', 8000);
+INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Lion', 'Porter', '2017-09-25', 10000);
+INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Tiger', 'Cop', '2017-09-25', 9000);
 INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Rhinoceros', 'Salesman', '2017-08-20', 10500);
 INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Peacock', 'Tester', '2017-05-15', 10000);
 INSERT INTO sqltestdb.emp (emp_name, job, hiredate, salary) VALUES ('Phoenix', 'Architect', '2017-08-22', 17000);
